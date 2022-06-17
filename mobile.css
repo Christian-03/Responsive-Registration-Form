@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(bg-intro-mobile.png);
+    color: white;
+}
+main{
+    display: flex;
+    align-items: center;
+    font-family:Poppins;
+    height: 100vh;
+    padding-left: 4cm;
+    padding-right: 4cm;
+    font-size: 16px;
+}
+@media screen and (max-width: 375px){
+    body{
+        background-color: hsl(0, 100%, 74%);
+    background-image: url(bg-intro-mobile.png);
+    color: white;
+    }
+}
+.info{
+    font-weight: 700;
+    padding: 12em 3em;
+}
+.info h1{
+    margin-bottom: 1cm;
+}
+.response{
+    padding: 2em;
+}
+.header{
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 2em;
+    border-radius: 5px;
+    padding: 1em 6em;
+}
+.header b{
+    color: hsl(246, 25%, 77%) ;
+}
+.forms{
+    background-color: white;
+    border-radius: 5px;
+    padding: 2em 3em;
+    box-sizing: border-box;
+    box-shadow: 2em;
+}
+input{
+    padding: 1em 18em 1em 1em;
+    margin: 8px 0px;
+}
+button{
+    background-color: hsl(154, 59%, 51%);
+    color:white;
+    border-radius: 5px;
+    border: none;
+    padding: 1em 11.5em 1em 8em;
+    margin: 8px 0px;
+}
+.terms{
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+}
+a{
+    color: red;
+}
