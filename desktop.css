@@ -3,22 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: hsl(0, 100%, 74%);
-    background-image: url(bg-intro-desktop.png);
-    color: white;
-}
 @media screen and (max-width: 1444px){
     body{
         background-color: hsl(0, 100%, 74%);
     background-image: url(bg-intro-desktop.png);
-    color: white;
-    }
-}
-@media screen and (max-width: 350px){
-    body{
-        background-color: hsl(0, 100%, 74%);
-    background-image: url(bg-intro-mobile.png);
     color: white;
     }
 }
@@ -32,14 +20,11 @@ main{
     src: url(https://fonts.google.com/specimen/Poppins);
 }
 .info{
-    padding: 12em 2em;
+    padding: 14em 4em;
 }
 .info h1{
     margin-bottom: 1cm;
-    font-weight: bold;
-}
-.response{
-    padding: 2em;
+    font-weight: 700;
 }
 .header{
     background-color: hsl(248, 32%, 49%);
@@ -51,23 +36,20 @@ main{
 .header b{
     color: hsl(246, 25%, 77%) ;
 }
-.forms{
+#form {
     background-color: white;
     border-radius: 5px;
     padding: 2em 3em;
     box-sizing: border-box;
     box-shadow: 0 0.4em #5555;
 }
-input{
-    padding: 1em 18em 1em 1em;
-    margin: 8px 0px;
-}
-button{
+
+#form button {
     background-color: hsl(154, 59%, 51%);
     color:white;
     border-radius: 5px;
     border: none;
-    padding: 1em 11.5em 1em 8em;
+    padding: 1em 13.6em 1em 9em;
     margin: 8px 0px;
     box-shadow: 0 0.25em #5555;
 }
@@ -77,4 +59,61 @@ button{
 }
 a{
     color: red;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 1px solid #f0f0f0;
+	border-radius: 5px;
+	display: block;
+	font-size: 14px;
+	padding: 1em 16em 1em 2em;
+    margin: 8px 0px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: red;
+}
+.input-control .error {
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+}
+.input-control i {
+    visibility: hidden;
+    position: absolute;
+}
+.input-control.error i.fee {
+    visibility: visible;
+    right: 12em;
+    margin: 16px;
+}
+.input-control j {
+    visibility: hidden;
+    position: absolute;
+}
+.input-control.error j.see {
+    visibility: visible;
+    color: red;
+    right: 33.5em;
+    margin: 21px;
+    font-weight: bold;
+    font-size: small;
+}
+.input-control.error ::placeholder{
+    color: transparent;
 }
