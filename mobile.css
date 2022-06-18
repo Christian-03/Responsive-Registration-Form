@@ -3,64 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: hsl(0, 100%, 74%);
-    background-image: url(bg-intro-mobile.png);
-    color: white;
-}
-main{
-    display: flex;
-    align-items: center;
-    font-family:Poppins;
-    height: 100vh;
-    padding-left: 4cm;
-    padding-right: 4cm;
-    font-size: 16px;
-}
 @media screen and (max-width: 375px){
     body{
         background-color: hsl(0, 100%, 74%);
-    background-image: url(bg-intro-mobile.png);
-    color: white;
+        background-image: url(bg-intro-mobile.png);
+        color: white;
     }
 }
+main{
+    height: 100vh;
+    font-family:'Poppins';
+    src: url(https://fonts.google.com/specimen/Poppins);
+    display:inline-block;
+    padding: 2em;
+}
 .info{
-    font-weight: 700;
-    padding: 12em 3em;
+    padding: 2em;
+    text-align: center;
 }
 .info h1{
     margin-bottom: 1cm;
+    font-weight: 700;
+    padding: 0 3em;
 }
-.response{
-    padding: 2em;
+.info h5{
+    padding: 0 8em;
 }
 .header{
     background-color: hsl(248, 32%, 49%);
     margin-bottom: 2em;
     border-radius: 5px;
     padding: 1em 6em;
+    box-shadow: 0 0.4em #5555;
 }
 .header b{
     color: hsl(246, 25%, 77%) ;
 }
-.forms{
+#form {
     background-color: white;
     border-radius: 5px;
     padding: 2em 3em;
     box-sizing: border-box;
-    box-shadow: 2em;
+    box-shadow: 0 0.4em #5555;
 }
-input{
-    padding: 1em 18em 1em 1em;
-    margin: 8px 0px;
-}
-button{
+
+#form button {
     background-color: hsl(154, 59%, 51%);
     color:white;
     border-radius: 5px;
     border: none;
-    padding: 1em 11.5em 1em 8em;
+    padding: 1em 13.6em 1em 9em;
     margin: 8px 0px;
+    box-shadow: 0 0.25em #5555;
 }
 .terms{
     color: hsl(246, 25%, 77%);
@@ -68,4 +62,61 @@ button{
 }
 a{
     color: red;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 1px solid #f0f0f0;
+	border-radius: 5px;
+	display: block;
+	font-size: 14px;
+	padding: 1em 16em 1em 2em;
+    margin: 8px 0px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: red;
+}
+.input-control .error {
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+}
+.input-control i {
+    visibility: hidden;
+    position: absolute;
+}
+.input-control.error i.fee {
+    visibility: visible;
+    right: 2px;
+    margin: 4px;
+}
+.input-control j {
+    visibility: hidden;
+    position: absolute;
+}
+.input-control.error j.see {
+    visibility: visible;
+    color: red;
+    right: 2em;
+    margin: 4px;
+    font-weight: bold;
+    font-size: small;
+}
+.input-control.error ::placeholder{
+    color: transparent;
 }
