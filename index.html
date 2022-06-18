@@ -5,46 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link href="desktop.css" rel="stylesheet" media="screen and (max-width: 1444px)">
-    <script src="error.js"></script>
+    <link href="style.css" rel="stylesheet" media="screen and (max-width: 1444px)">
+    <link href="mobile.css" rel="stylesheet" media="screen and (max-width: 375px)"> 
+    <script defer src="error.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
     </style>
 </head>
 <body>
     <main>
-        <div class="info">
-            <strong><h1>Learn to code by watching others</h1></strong>
-            <p>
-                <h5>See how experienced developers solve problems in real-time.
-                    Watching scripted tutorials is great,
-                    but understanding how developers think is invaluable.
-                </h5>
-        </div>
-        <div class="response">
-            <div class="header">
-                <strong>Try it free 7 days </strong><b>then $20/mo. thereafter</b>
+    <div class="info">
+        <strong><h1>Learn to code by watching others</h1></strong>
+        <p>
+            <h5>See how experienced developers solve problems in real-time.
+                Watching scripted tutorials is great,
+                but understanding how developers think is invaluable.
+            </h5>
+    </div>
+    <div class="container">
+        <div class="header"><strong>Try it free 7 days </strong><b>then $20/mo. thereafter</b></div>
+        <form id="form" action="/">
+            <div class="input-control">
+                <input id="firstname" name="firstname" type="text" placeholder="First Name">
+                <div class="error"></div><i class="fee"><img src="icon-error.svg"></i>
             </div>
-            <div>
-                <form action="/" method="get" id="forms" class="forms">
-                    <input type="text" name="firstname" id="firstname" placeholder="First Name"><p></p>
-                    <i class="fee"><img src="icon-error.svg" alt=""></i>
-                    <small>Error message</small>
-                    <input type="text" name="lastname" id="lastname" placeholder="Last Name"><p></p>
-                    <i class="fee"><img src="icon-error.svg" alt=""></i>
-                    <small>Error message</small>
-                    <input type="email" name="email" id="email" placeholder="Email Address"><p></p>
-                    <i class="fee"><img src="icon-error.svg" alt=""></i>
-                    <small>Error message</small>
-                    <input type="password" name="password" id="password" placeholder="Password"><p></p>
-                    <i class="fee"><img src="icon-error.svg" alt=""></i>
-                    <small>Error message</small>
-                    <button type="submit">CLAIM YOUR FREE TRIAL</button>
-                    <h5 class="terms">By clicking this button, you are agreeing to our <a>Terms and Services</a></h5>
-                    
-                </form>
+            <div class="input-control">
+                <input id="lastname" name="lastname" type="text" placeholder="Last Name">
+                <div class="error"></div><i class="fee"><img src="icon-error.svg"></i>
             </div>
-        </div>
+            <div class="input-control">
+                <input id="email" name="email" type="text" placeholder="Email Address">
+                <div class="error"></div><i class="fee"><img src="icon-error.svg"></i><j class="see">email@example/com</j>
+            </div>
+            <div class="input-control">
+                <input id="password"name="password" type="password" placeholder="Password">
+                <div class="error"></div><i class="fee"><img src="icon-error.svg"></i>
+            </div>
+            <button type="submit">CLAIM YOUR FREE</button>
+            <h6 class="terms">By clicking this button, you are agreeing to our <a>Terms and Services</a></h6>
+        </form>
+    </div>
     </main>
 </body>
 </html>
